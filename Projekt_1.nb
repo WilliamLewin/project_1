@@ -1,0 +1,256 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      7144,        246]
+NotebookOptionsPosition[      5582,        185]
+NotebookOutlinePosition[      5941,        201]
+CellTagsIndexPosition[      5898,        198]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Mathematica-projekt 1\[LineSeparator]William och Elias", "Title",
+ CellChangeTimes->{{3.713672165138973*^9, 3.7136721790306463`*^9}, {
+  3.713672694182617*^9, 3.7136727012683077`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "a) Assume that you play a variant of a poker game with ",
+ StyleBox["five cards",
+  FontWeight->"Bold"],
+ " that is using a subset of two ordinary deck of cards. The subset \
+considered is cards valued ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"8", ",", "9", ",", "10", ",", "J", ",", "Q", ",", "K", ",", "A"}],
+    TraditionalForm]],
+  ExpressionUUID -> "b8cef9ee-bc51-4d33-a258-d8b13c0ee26f"],
+ " from the two decks.\nCalculate the exact probability of the following \
+hands using the  ",
+ StyleBox["census method",
+  FontWeight->"Bold"],
+ "."
+}], "Section",
+ CellChangeTimes->{{3.71367233313684*^9, 3.713672339768745*^9}, {
+  3.713672586562952*^9, 3.71367258667391*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["One Pair", "Subsection",
+ CellChangeTimes->{{3.713672411810828*^9, 3.713672447212792*^9}}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.713672591595662*^9, 3.713672593064313*^9}}]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Two Pairs", "Subsection",
+ CellChangeTimes->{{3.713672411810828*^9, 3.713672444213571*^9}}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.7136725951709347`*^9, 3.713672595968904*^9}}]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Three of a kind", "Subsection",
+ CellChangeTimes->{{3.713672411810828*^9, 3.71367245151725*^9}}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.7136725973882008`*^9, 3.713672597960148*^9}}]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Four of a kind", "Subsection",
+ CellChangeTimes->{{3.713672411810828*^9, 3.7136724211689463`*^9}, {
+  3.71367245500464*^9, 3.713672457948757*^9}}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.713672607933795*^9, 3.7136726085915737`*^9}}]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Five of a kind", "Subsection",
+ CellChangeTimes->{{3.713672411810828*^9, 3.7136724211689463`*^9}, {
+  3.713672459884169*^9, 3.7136724620607033`*^9}}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.713672609924099*^9, 3.71367261056066*^9}}]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Full hand", "Subsection",
+ CellChangeTimes->{{3.713672411810828*^9, 3.7136724211689463`*^9}, {
+  3.713672467236998*^9, 3.7136724712436743`*^9}}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.7136726124837303`*^9, 3.713672613399561*^9}}]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Straight", "Subsection",
+ CellChangeTimes->{{3.713672411810828*^9, 3.7136724211689463`*^9}, {
+  3.713672478100114*^9, 3.713672479181058*^9}}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.7136726160043917`*^9, 3.713672616767427*^9}}]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Flush", "Subsection",
+ CellChangeTimes->{{3.713672411810828*^9, 3.7136724211689463`*^9}, {
+  3.713672481411849*^9, 3.713672481922214*^9}}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.713672618565168*^9, 3.7136726191594267`*^9}}]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Straight flush", "Subsection",
+ CellChangeTimes->{{3.713672411810828*^9, 3.7136724211689463`*^9}, {
+  3.713672484228167*^9, 3.713672488715909*^9}}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.7136726209804564`*^9, 3.713672621671513*^9}}]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Nothing", "Subsection",
+ CellChangeTimes->{{3.713672411810828*^9, 3.7136724211689463`*^9}, {
+  3.7136725068056087`*^9, 3.7136725091396103`*^9}}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.713672623603896*^9, 3.71367262435139*^9}}]
+}, Closed]]
+}, Open  ]],
+
+Cell[TextData[{
+ "b) Consider the following ",
+ StyleBox["combinatorial calculus",
+  FontWeight->"Bold"],
+ " of the probability of getting four of a kind. In this case we are dealing \
+with sampling without replacement and without regard to order. First choose \
+one of seven possibilities ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"{", 
+    RowBox[{"8", ",", "9", ",", "\[Ellipsis]", ",", "A"}], "}"}], 
+   TraditionalForm]],
+  ExpressionUUID -> "69babe48-fb9a-48ac-b323-6484a0b666df"],
+ " to be the kind value ",
+ Cell[BoxData[
+  FormBox["x", TraditionalForm]],
+  ExpressionUUID -> "765c5e22-c345-4073-ace9-1e4748f035af"],
+ ", then we choose four out of the eight ",
+ Cell[BoxData[
+  FormBox["x", TraditionalForm]],
+  ExpressionUUID -> "d6e4cfa6-9076-406b-97f4-37fdea45db39"],
+ " and finally we add a last card from the remaining ",
+ Cell[BoxData[
+  FormBox["48", TraditionalForm]],
+  ExpressionUUID -> "7fafc85c-a625-4cb5-b186-8de5a5fecc66"],
+ ". The multiplication principle gives the result."
+}], "Section",
+ CellChangeTimes->{{3.713672365705537*^9, 3.713672369080338*^9}}],
+
+Cell[TextData[{
+ "c) Estimate the probability of one pair using the ",
+ StyleBox["Monte Carlo method",
+  FontWeight->"Bold"],
+ ". Draw a diagram that shows how the probability estimate stabilises with \
+increasing sample size."
+}], "Section",
+ CellChangeTimes->{{3.713672383442274*^9, 3.7136723867995167`*^9}}]
+}, Open  ]]
+},
+WindowSize->{808, 651},
+WindowMargins->{{20, Automatic}, {Automatic, 44}},
+FrontEndVersion->"11.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (September \
+21, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 190, 2, 148, "Title"],
+Cell[CellGroupData[{
+Cell[795, 28, 689, 18, 241, "Section"],
+Cell[CellGroupData[{
+Cell[1509, 50, 96, 1, 44, "Subsection"],
+Cell[1608, 53, 92, 1, 32, "Input"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[1737, 59, 97, 1, 36, "Subsection"],
+Cell[1837, 62, 94, 1, 32, "Input"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[1968, 68, 102, 1, 36, "Subsection"],
+Cell[2073, 71, 94, 1, 32, "Input"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[2204, 77, 152, 2, 36, "Subsection"],
+Cell[2359, 81, 94, 1, 32, "Input"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[2490, 87, 155, 2, 36, "Subsection"],
+Cell[2648, 91, 91, 1, 32, "Input"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[2776, 97, 150, 2, 36, "Subsection"],
+Cell[2929, 101, 94, 1, 32, "Input"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[3060, 107, 147, 2, 36, "Subsection"],
+Cell[3210, 111, 94, 1, 32, "Input"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[3341, 117, 144, 2, 36, "Subsection"],
+Cell[3488, 121, 94, 1, 32, "Input"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[3619, 127, 153, 2, 36, "Subsection"],
+Cell[3775, 131, 94, 1, 32, "Input"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[3906, 137, 150, 2, 36, "Subsection"],
+Cell[4059, 141, 91, 1, 32, "Input"]
+}, Closed]]
+}, Open  ]],
+Cell[4177, 146, 1076, 27, 276, "Section"],
+Cell[5256, 175, 310, 7, 120, "Section"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
