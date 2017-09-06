@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      7144,        246]
-NotebookOptionsPosition[      5582,        185]
-NotebookOutlinePosition[      5941,        201]
-CellTagsIndexPosition[      5898,        198]
+NotebookDataLength[      7319,        251]
+NotebookOptionsPosition[      5721,        189]
+NotebookOutlinePosition[      6078,        205]
+CellTagsIndexPosition[      6035,        202]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -45,6 +45,10 @@ hands using the  ",
 }], "Section",
  CellChangeTimes->{{3.71367233313684*^9, 3.713672339768745*^9}, {
   3.713672586562952*^9, 3.71367258667391*^9}}],
+
+Cell[BoxData[
+ RowBox[{"deck1", " ", "=", " ", "new", " "}]], "Input",
+ CellChangeTimes->{{3.713675792626074*^9, 3.713675794581491*^9}}],
 
 Cell[CellGroupData[{
 
@@ -183,8 +187,8 @@ increasing sample size."
  CellChangeTimes->{{3.713672383442274*^9, 3.7136723867995167`*^9}}]
 }, Open  ]]
 },
-WindowSize->{808, 651},
-WindowMargins->{{20, Automatic}, {Automatic, 44}},
+WindowSize->{808, 751},
+WindowMargins->{{4, Automatic}, {Automatic, 0}},
 FrontEndVersion->"11.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (September \
 21, 2016)",
 StyleDefinitions->"Default.nb"
@@ -204,53 +208,52 @@ Cell[CellGroupData[{
 Cell[580, 22, 190, 2, 148, "Title"],
 Cell[CellGroupData[{
 Cell[795, 28, 689, 18, 241, "Section"],
+Cell[1487, 48, 136, 2, 32, "Input"],
 Cell[CellGroupData[{
-Cell[1509, 50, 96, 1, 44, "Subsection"],
-Cell[1608, 53, 92, 1, 32, "Input"]
+Cell[1648, 54, 96, 1, 44, "Subsection"],
+Cell[1747, 57, 92, 1, 32, "Input"]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[1737, 59, 97, 1, 36, "Subsection"],
-Cell[1837, 62, 94, 1, 32, "Input"]
+Cell[1876, 63, 97, 1, 36, "Subsection"],
+Cell[1976, 66, 94, 1, 32, "Input"]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[1968, 68, 102, 1, 36, "Subsection"],
-Cell[2073, 71, 94, 1, 32, "Input"]
+Cell[2107, 72, 102, 1, 36, "Subsection"],
+Cell[2212, 75, 94, 1, 32, "Input"]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[2204, 77, 152, 2, 36, "Subsection"],
-Cell[2359, 81, 94, 1, 32, "Input"]
+Cell[2343, 81, 152, 2, 36, "Subsection"],
+Cell[2498, 85, 94, 1, 32, "Input"]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[2490, 87, 155, 2, 36, "Subsection"],
-Cell[2648, 91, 91, 1, 32, "Input"]
+Cell[2629, 91, 155, 2, 36, "Subsection"],
+Cell[2787, 95, 91, 1, 32, "Input"]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[2776, 97, 150, 2, 36, "Subsection"],
-Cell[2929, 101, 94, 1, 32, "Input"]
+Cell[2915, 101, 150, 2, 36, "Subsection"],
+Cell[3068, 105, 94, 1, 32, "Input"]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[3060, 107, 147, 2, 36, "Subsection"],
-Cell[3210, 111, 94, 1, 32, "Input"]
+Cell[3199, 111, 147, 2, 36, "Subsection"],
+Cell[3349, 115, 94, 1, 32, "Input"]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[3341, 117, 144, 2, 36, "Subsection"],
-Cell[3488, 121, 94, 1, 32, "Input"]
+Cell[3480, 121, 144, 2, 36, "Subsection"],
+Cell[3627, 125, 94, 1, 32, "Input"]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[3619, 127, 153, 2, 36, "Subsection"],
-Cell[3775, 131, 94, 1, 32, "Input"]
+Cell[3758, 131, 153, 2, 36, "Subsection"],
+Cell[3914, 135, 94, 1, 32, "Input"]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[3906, 137, 150, 2, 36, "Subsection"],
-Cell[4059, 141, 91, 1, 32, "Input"]
+Cell[4045, 141, 150, 2, 36, "Subsection"],
+Cell[4198, 145, 91, 1, 32, "Input"]
 }, Closed]]
 }, Open  ]],
-Cell[4177, 146, 1076, 27, 276, "Section"],
-Cell[5256, 175, 310, 7, 120, "Section"]
+Cell[4316, 150, 1076, 27, 276, "Section"],
+Cell[5395, 179, 310, 7, 120, "Section"]
 }, Open  ]]
 }
 ]
 *)
-
-(* End of internal cache information *)
 
