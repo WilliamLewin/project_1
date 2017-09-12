@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     16576,        391]
-NotebookOptionsPosition[     16052,        368]
-NotebookOutlinePosition[     16409,        384]
-CellTagsIndexPosition[     16366,        381]
+NotebookDataLength[     22126,        522]
+NotebookOptionsPosition[     21602,        499]
+NotebookOutlinePosition[     21959,        515]
+CellTagsIndexPosition[     21916,        512]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -203,7 +203,59 @@ Cell[BoxData[
       RowBox[{"nothing", "[", "___", "]"}]}], ":="}]}], " ", 
    "\[IndentingNewLine]", "*)"}], "\[IndentingNewLine]", 
   "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{"deckFinal", " ", "=", " ", 
+     RowBox[{"{", 
+      RowBox[{
+      "108", ",", "109", ",", "110", ",", "111", ",", "112", ",", "113", ",", 
+       "114", ",", "108", ",", "109", ",", "110", ",", "111", ",", "112", ",",
+        "113", ",", "114", ",", "\[IndentingNewLine]", "208", ",", "209", ",",
+        "210", ",", "211", ",", "212", ",", "213", ",", "214", ",", "208", 
+       ",", "209", ",", "210", ",", "211", ",", "212", ",", "213", ",", "214",
+        "\[IndentingNewLine]", ",", "308", ",", "309", ",", "310", ",", "311",
+        ",", "312", ",", "313", ",", "314", ",", "308", ",", "309", ",", 
+       "310", ",", "311", ",", "312", ",", "313", ",", "314", 
+       "\[IndentingNewLine]", ",", "408", ",", "409", ",", "410", ",", "411", 
+       ",", "412", ",", "413", ",", "414", ",", "408", ",", "409", ",", "410",
+        ",", "411", ",", "412", ",", "413", ",", "414"}], "}"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"hands", " ", "=", " ", 
+     RowBox[{"Subsets", "[", 
+      RowBox[{"deckFinal", ",", 
+       RowBox[{"{", "5", "}"}]}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"Short", "[", "hands", "]"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"pair", "=", "0"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"twoPair", "=", "0"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"threeKind", "=", "0"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"fourKind", "=", "0"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"fiveKind", "=", "0"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"fullHand", "=", "0"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"straight", "=", "0"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"flush", "=", "0"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"straighFlush", "=", "0"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"nothing", "=", "0"}], ";", "\[IndentingNewLine]", 
+    "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"villkor1", "[", 
+      RowBox[{"{", 
+       RowBox[{"___", ",", "x_", ",", "x_", ",", "___"}], "}"}], "]"}], ":=", 
+     
+     RowBox[{
+      RowBox[{
+       RowBox[{"pair", "++"}], " ", "\"\<pair\>\"", "\[IndentingNewLine]", 
+       RowBox[{"villkor2", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+          "___", ",", "x_", ",", "x_", ",", "y_", ",", "y_", ",", "___"}], 
+          "}"}], "/;", " ", 
+         RowBox[{"x", "\[NotEqual]", "y"}]}], "]"}]}], ":=", 
+      RowBox[{
+       RowBox[{"twoPair", "++"}], " ", "\"\<two pair\>\""}]}]}]}], "*)"}], 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
   RowBox[{
+   RowBox[{"ClearAll", "[", "\"\<`*\>\"", "]"}], "\n", 
    RowBox[{
     RowBox[{"deckFinal", " ", "=", " ", 
      RowBox[{"{", 
@@ -219,14 +271,15 @@ Cell[BoxData[
        "\[IndentingNewLine]", ",", "408", ",", "409", ",", "410", ",", "411", 
        ",", "412", ",", "413", ",", "414", ",", "408", ",", "409", ",", "410",
         ",", "411", ",", "412", ",", "413", ",", "414"}], "}"}]}], ";"}], 
-   "\[IndentingNewLine]", 
+   "\n", 
    RowBox[{
-    RowBox[{"hands", " ", "=", " ", 
-     RowBox[{"Subsets", "[", 
-      RowBox[{"deckFinal", ",", 
-       RowBox[{"{", "5", "}"}]}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+    RowBox[{"hands", " ", "=", 
+     RowBox[{"Sort", "[", " ", 
+      RowBox[{"Subsets", "[", 
+       RowBox[{"deckFinal", ",", 
+        RowBox[{"{", "5", "}"}]}], "]"}], "]"}]}], ";"}], "\n", 
    RowBox[{
-    RowBox[{"Short", "[", "hands", "]"}], ";"}], "\[IndentingNewLine]", 
+    RowBox[{"Short", "[", "hands", "]"}], ";"}], "\n", 
    RowBox[{
     RowBox[{"pair", "=", "0"}], ";"}], "\[IndentingNewLine]", 
    RowBox[{
@@ -246,16 +299,15 @@ Cell[BoxData[
    RowBox[{
     RowBox[{"straighFlush", "=", "0"}], ";"}], "\[IndentingNewLine]", 
    RowBox[{
-    RowBox[{"nothing", "=", "0"}], ";"}], "\[IndentingNewLine]", 
-   "\[IndentingNewLine]", 
+    RowBox[{"nothing", "=", "0"}], ";"}], "\n", "\[IndentingNewLine]", 
    RowBox[{
-    RowBox[{"villkor1", "[", 
+    RowBox[{"rob", "[", 
      RowBox[{"{", 
       RowBox[{"___", ",", "x_", ",", "x_", ",", "___"}], "}"}], "]"}], ":=", 
     RowBox[{
      RowBox[{"pair", "++"}], " ", "\"\<pair\>\""}]}], "\[IndentingNewLine]", 
    RowBox[{
-    RowBox[{"villkor2", "[", 
+    RowBox[{"rob", "[", 
      RowBox[{
       RowBox[{"{", 
        RowBox[{
@@ -263,8 +315,86 @@ Cell[BoxData[
        "/;", " ", 
       RowBox[{"x", "\[NotEqual]", "y"}]}], "]"}], ":=", 
     RowBox[{
-     RowBox[{"twoPair", "++"}], " ", "\"\<two pair\>\""}]}], 
-   "\[IndentingNewLine]"}]}]], "Input",
+     RowBox[{"twoPair", "++"}], " ", "\"\<Two Pair\>\""}]}], 
+   RowBox[{"(*", 
+    RowBox[{"FUNKAR", " ", "INTE"}], "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"rob", "[", 
+     RowBox[{"{", 
+      RowBox[{"_", ",", "x_", ",", "x_", ",", "x_", ",", "_"}], "}"}], "]"}], 
+    ":=", 
+    RowBox[{
+     RowBox[{"threeKind", "++"}], "\"\<Three of a kind\>\""}]}], 
+   RowBox[{"(*", 
+    RowBox[{"FUNKAR", " ", "INTE"}], "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"rob", "[", 
+     RowBox[{"{", 
+      RowBox[{"_", ",", "x_", ",", "x_", ",", "x_", ",", "x_", ",", "_"}], 
+      "}"}], "]"}], ":=", 
+    RowBox[{
+     RowBox[{"fourKind", "++"}], "\"\<Four of a kind\>\""}]}], 
+   RowBox[{"(*", 
+    RowBox[{"FUNKAR", " ", "INTE"}], "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"rob", "[", 
+     RowBox[{"{", 
+      RowBox[{"x_", ",", "x_", ",", "x_", ",", "x_", ",", "x_"}], "}"}], 
+     "]"}], ":=", 
+    RowBox[{
+     RowBox[{"fiveKind", "++"}], "\"\<Five of a kind\>\""}]}], 
+   RowBox[{"(*", 
+    RowBox[{"FUNKAR", " ", "INTE"}], "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"rob", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"x_", ",", "x_", ",", "x_", ",", "y_", ",", "y_"}], "}"}], "/;",
+       " ", 
+      RowBox[{"x", "\[NotEqual]", "y"}]}], "]"}], ":=", " ", 
+    RowBox[{
+     RowBox[{"fullHand", "++"}], "\"\<Full hand\>\""}]}], 
+   RowBox[{"(*", 
+    RowBox[{"FUNKAR", " ", "INTE"}], "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"rob", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"x_", ",", "y_", ",", "z_", ",", "v_", ",", "m_"}], "}"}], "/;",
+       " ", 
+      RowBox[{
+       RowBox[{"y", " ", "==", " ", 
+        RowBox[{"x", "+", "1"}]}], " ", "&&", " ", 
+       RowBox[{"z", " ", "==", " ", 
+        RowBox[{"y", "+", "1"}]}], "&&", " ", 
+       RowBox[{"v", " ", "==", " ", 
+        RowBox[{"z", "+", "1"}]}], "&&", " ", 
+       RowBox[{"m", "==", " ", 
+        RowBox[{"v", "+", "1"}]}]}]}], " ", "]"}], ":=", 
+    RowBox[{
+     RowBox[{"straight", "++"}], " ", "\"\<Straight hand\>\""}]}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"rob", "[", 
+     RowBox[{"{", "_", "}"}], "]"}], ":=", "nothing"}], " ", 
+   RowBox[{"(*", 
+    RowBox[{"FUNKAR", " ", "INTE"}], "*)"}], "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", 
+   RowBox[{"For", "[", 
+    RowBox[{
+     RowBox[{"i", "=", "0"}], ",", 
+     RowBox[{"i", "<=", 
+      RowBox[{"Length", "[", "hands", "]"}]}], ",", 
+     RowBox[{"i", "++"}], ",", 
+     RowBox[{"rob", "[", 
+      RowBox[{"hands", "[", 
+       RowBox[{"[", "i", "]"}], "]"}], "]"}]}], "]"}], "\n", 
+   RowBox[{"Print", "[", "pair", "]"}], "\[IndentingNewLine]", 
+   RowBox[{"Print", "[", "twoPair", "]"}], "\[IndentingNewLine]", 
+   RowBox[{"Print", "[", "threeKind", "]"}], "\[IndentingNewLine]", 
+   RowBox[{"Print", "[", "fourKind", "]"}], "\[IndentingNewLine]", 
+   RowBox[{"Print", "[", "straight", "]"}], "\[IndentingNewLine]", 
+   RowBox[{"Print", "[", "nothing", "]"}], "\n"}]}]], "Input",
  CellChangeTimes->{{3.713856645029517*^9, 3.7138566459882708`*^9}, {
    3.71385677638832*^9, 3.713856861008666*^9}, {3.713856900379615*^9, 
    3.713856958246372*^9}, {3.713857089909676*^9, 3.713857090733069*^9}, {
@@ -324,7 +454,8 @@ Cell[BoxData[
    3.714187719766436*^9}, {3.7141878085842667`*^9, 3.714187812208084*^9}, {
    3.714187890797031*^9, 3.714187891242845*^9}, {3.7141881134031057`*^9, 
    3.714188173964553*^9}, {3.714188798014642*^9, 3.7141888032149067`*^9}, {
-   3.7141888517573957`*^9, 3.714188870105979*^9}}]
+   3.7141888517573957`*^9, 3.714188870105979*^9}, {3.71420151266433*^9, 
+   3.714201534864415*^9}}]
 }, Open  ]],
 
 Cell[TextData[{
@@ -388,10 +519,10 @@ Cell[580, 22, 190, 2, 148, "Title"],
 Cell[CellGroupData[{
 Cell[795, 28, 737, 19, 311, "Section"],
 Cell[1535, 49, 51, 1, 32, "Input"],
-Cell[1589, 52, 13043, 274, 1314, "Input"]
+Cell[1589, 52, 18593, 405, 2259, "Input"]
 }, Open  ]],
-Cell[14647, 329, 1076, 27, 383, "Section"],
-Cell[15726, 358, 310, 7, 190, "Section"]
+Cell[20197, 460, 1076, 27, 383, "Section"],
+Cell[21276, 489, 310, 7, 190, "Section"]
 }, Open  ]]
 }
 ]
