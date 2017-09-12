@@ -1,0 +1,175 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5505,        167]
+NotebookOptionsPosition[      5100,        148]
+NotebookOutlinePosition[      5459,        164]
+CellTagsIndexPosition[      5416,        161]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"ClearAll", "[", "\"\<`*\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.714209891907202*^9, 3.714209906711762*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"deckFinal", " ", "=", " ", 
+   RowBox[{"Sort", "[", 
+    RowBox[{"{", 
+     RowBox[{
+     "108", ",", "109", ",", "110", ",", "111", ",", "112", ",", "113", ",", 
+      "114", ",", "108", ",", "109", ",", "110", ",", "111", ",", "112", ",", 
+      "113", ",", "114", ",", "\[IndentingNewLine]", "208", ",", "209", ",", 
+      "210", ",", "211", ",", "212", ",", "213", ",", "214", ",", "208", ",", 
+      "209", ",", "210", ",", "211", ",", "212", ",", "213", ",", "214", 
+      "\[IndentingNewLine]", ",", "308", ",", "309", ",", "310", ",", "311", 
+      ",", "312", ",", "313", ",", "314", ",", "308", ",", "309", ",", "310", 
+      ",", "311", ",", "312", ",", "313", ",", "314", "\[IndentingNewLine]", 
+      ",", "408", ",", "409", ",", "410", ",", "411", ",", "412", ",", "413", 
+      ",", "414", ",", "408", ",", "409", ",", "410", ",", "411", ",", "412", 
+      ",", "413", ",", "414"}], "}"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"hands", " ", "=", " ", 
+   RowBox[{"Subsets", "[", 
+    RowBox[{"deckFinal", ",", " ", 
+     RowBox[{"{", "5", "}"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{{3.714209667606853*^9, 3.71420968629393*^9}, {
+  3.714210150686672*^9, 3.71421015096437*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"pairQ", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+       "___", ",", "x_", ",", "x_", ",", "y_", ",", "y_", ",", "___"}], "}"}],
+       "/;", 
+      RowBox[{"x", "\[NotEqual]", "y"}]}], "]"}], ":=", "False"}], ";"}], " ", 
+  RowBox[{"(*", " ", 
+   RowBox[{"two", " ", "pairs"}], " ", "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"pairQ", "[", 
+     RowBox[{"{", 
+      RowBox[{"x_", ",", "x_", ",", "_", ",", "y_", ",", "y_"}], "}"}], "]"}],
+     ":=", "False"}], ";"}], " ", 
+  RowBox[{"(*", " ", 
+   RowBox[{"three", " ", "of", " ", "a", " ", "kind"}], " ", 
+   "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"pairQ", "[", 
+     RowBox[{"{", 
+      RowBox[{"x_", ",", "x_", ",", "x_", ",", "y_", ",", "y_"}], "}"}], 
+     "]"}], ":=", "False"}], ";"}], " ", 
+  RowBox[{"(*", " ", 
+   RowBox[{"three", " ", "of", " ", "a", " ", "kind"}], " ", 
+   "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"pairQ", "[", 
+     RowBox[{"{", 
+      RowBox[{"x_", ",", "x_", ",", "y_", ",", "y_", ",", "y_"}], "}"}], 
+     "]"}], ":=", "False"}], ";"}], " ", 
+  RowBox[{"(*", " ", 
+   RowBox[{"three", " ", "of", " ", "a", " ", "kind"}], " ", 
+   "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"pairQ", "[", 
+     RowBox[{"{", 
+      RowBox[{"___", ",", "x_", ",", "x_", ",", "x_", ",", "x_", ",", "___"}],
+       "}"}], "]"}], ":=", "False"}], ";"}], " ", 
+  RowBox[{"(*", " ", 
+   RowBox[{"three", " ", "of", " ", "a", " ", "kind"}], " ", 
+   "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"pairQ", "[", 
+     RowBox[{"{", 
+      RowBox[{"___", ",", "x_", ",", "x_", ",", "x_", ",", "___"}], "}"}], 
+     "]"}], ":=", "False"}], ";", " ", 
+   RowBox[{"(*", " ", 
+    RowBox[{"three", " ", "of", " ", "a", " ", "kind"}], " ", "*)"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"pairQ", "[", 
+     RowBox[{"{", 
+      RowBox[{"___", ",", "x_", ",", "x_", ",", "___"}], "}"}], "]"}], ":=", 
+    "True"}], ";"}], " ", 
+  RowBox[{"(*", " ", 
+   RowBox[{"a", " ", "pair"}], " ", "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"pairQ", "[", 
+    RowBox[{"{", "_", "}"}], "]"}], ":=", "False"}], " ", 
+  RowBox[{"(*", " ", "else", " ", "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"pair", "[", "hand_", "]"}], ":=", " ", 
+   RowBox[{"pairQ", "[", 
+    RowBox[{"Sort", "[", 
+     RowBox[{"Mod", "[", 
+      RowBox[{"hand", ",", "100"}], "]"}], "]"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Count", "[", 
+  RowBox[{"hands", ",", 
+   RowBox[{"_", "?", 
+    RowBox[{"(", "pairQ", ")"}]}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.714209701445992*^9, 3.714209879128169*^9}, {
+  3.714210047147253*^9, 3.714210047465461*^9}}],
+
+Cell[BoxData["655200"], "Output",
+ CellChangeTimes->{3.714209888568533*^9, 3.7142099640715027`*^9, 
+  3.7142101071734753`*^9, 3.71421020791086*^9, 3.7142102866054583`*^9}]
+}, Open  ]]
+},
+WindowSize->{808, 555},
+WindowMargins->{{44, Automatic}, {-4, Automatic}},
+FrontEndVersion->"11.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (September \
+21, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 136, 2, 32, "Input"],
+Cell[697, 24, 1290, 25, 138, "Input"],
+Cell[CellGroupData[{
+Cell[2012, 53, 2898, 88, 222, "Input"],
+Cell[4913, 143, 171, 2, 66, "Output"]
+}, Open  ]]
+}
+]
+*)
+
