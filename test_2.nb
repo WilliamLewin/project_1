@@ -10,18 +10,14 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     17345,        512]
-NotebookOptionsPosition[     16202,        471]
-NotebookOutlinePosition[     16562,        487]
-CellTagsIndexPosition[     16519,        484]
+NotebookDataLength[     16165,        466]
+NotebookOptionsPosition[     15388,        438]
+NotebookOutlinePosition[     15748,        454]
+CellTagsIndexPosition[     15705,        451]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
-Cell[BoxData[""], "Input",
- CellChangeTimes->{{3.714209891907202*^9, 3.714209906711762*^9}, 
-   3.7142147521154203`*^9}],
-
 Cell[BoxData[{
  RowBox[{
   RowBox[{"deckFinal", " ", "=", " ", 
@@ -49,8 +45,6 @@ Cell[BoxData[{
  CellChangeTimes->{{3.714209667606853*^9, 3.71420968629393*^9}, {
   3.714210150686672*^9, 3.71421015096437*^9}, {3.714210701269346*^9, 
   3.714210704507263*^9}, {3.714211208082073*^9, 3.7142112323928537`*^9}}],
-
-Cell[CellGroupData[{
 
 Cell[BoxData[{"\"\<PAIR\>\"", "\[IndentingNewLine]", 
  RowBox[{
@@ -122,16 +116,6 @@ Cell[BoxData[{"\"\<PAIR\>\"", "\[IndentingNewLine]",
   3.714212873616576*^9, 3.714212882506858*^9}, {3.7142147132738447`*^9, 
   3.7142147177045183`*^9}, {3.714214847898961*^9, 3.7142148486418533`*^9}}],
 
-Cell[BoxData["\<\"PAIR\"\>"], "Output",
- CellChangeTimes->{3.714214758082178*^9}],
-
-Cell[BoxData[
- RowBox[{"5254.284499567519`", " ", "\<\"%\"\>"}]], "Output",
- CellChangeTimes->{3.7142148253154287`*^9}]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
 Cell[BoxData[{"\"\<Two Pair\>\"", "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"twoPairProb", "[", 
@@ -190,16 +174,6 @@ Cell[BoxData[{"\"\<Two Pair\>\"", "\[IndentingNewLine]",
    3.714212868536934*^9, {3.714214703927229*^9, 3.7142147093048353`*^9}, {
    3.714214857373247*^9, 3.714214857836734*^9}}],
 
-Cell[BoxData["\<\"Two Pair\"\>"], "Output",
- CellChangeTimes->{3.714214825386566*^9}],
-
-Cell[BoxData[
- RowBox[{"1724.0621014205922`", " ", "\<\"%\"\>"}]], "Output",
- CellChangeTimes->{3.7142148731190557`*^9}]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
 Cell[BoxData[{"\"\<Three of kind\>\"", "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"threeProb", "[", 
@@ -249,13 +223,6 @@ Cell[BoxData[{"\"\<Three of kind\>\"", "\[IndentingNewLine]",
   "\"\<%\>\""}], "\[IndentingNewLine]"}], "Input",
  CellChangeTimes->{{3.7142127900960283`*^9, 3.714212866928586*^9}, {
    3.714214695740183*^9, 3.714214699689023*^9}, 3.714214861212809*^9}],
-
-Cell[BoxData["\<\"Three of kind\"\>"], "Output",
- CellChangeTimes->{3.714214873178459*^9}],
-
-Cell[BoxData["$Aborted"], "Output",
- CellChangeTimes->{3.71421487638338*^9}]
-}, Open  ]],
 
 Cell[BoxData[{"\"\<Four of kind\>\"", "\[IndentingNewLine]", 
  RowBox[{
@@ -486,33 +453,20 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 120, 2, 32, "Input"],
-Cell[681, 24, 1382, 26, 138, "Input"],
+Cell[558, 20, 1382, 26, 138, "Input"],
+Cell[1943, 48, 2382, 68, 243, "Input"],
+Cell[4328, 118, 2053, 56, 201, "Input"],
+Cell[6384, 176, 1731, 48, 201, "Input"],
+Cell[8118, 226, 1091, 29, 117, "Input"],
+Cell[9212, 257, 952, 25, 96, "Input"],
+Cell[10167, 284, 1258, 36, 117, "Input"],
+Cell[11428, 322, 1216, 32, 117, "Input"],
+Cell[12647, 356, 1377, 39, 138, "Input"],
 Cell[CellGroupData[{
-Cell[2088, 54, 2382, 68, 243, "Input"],
-Cell[4473, 124, 81, 1, 32, "Output"],
-Cell[4557, 127, 119, 2, 32, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[4713, 134, 2053, 56, 201, "Input"],
-Cell[6769, 192, 85, 1, 32, "Output"],
-Cell[6857, 195, 120, 2, 32, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[7014, 202, 1731, 48, 201, "Input"],
-Cell[8748, 252, 90, 1, 32, "Output"],
-Cell[8841, 255, 76, 1, 32, "Output"]
-}, Open  ]],
-Cell[8932, 259, 1091, 29, 117, "Input"],
-Cell[10026, 290, 952, 25, 96, "Input"],
-Cell[10981, 317, 1258, 36, 117, "Input"],
-Cell[12242, 355, 1216, 32, 117, "Input"],
-Cell[13461, 389, 1377, 39, 138, "Input"],
-Cell[CellGroupData[{
-Cell[14863, 432, 1076, 27, 96, "Input"],
-Cell[15942, 461, 84, 1, 32, "Output"],
-Cell[16029, 464, 75, 1, 32, "Output"],
-Cell[16107, 467, 79, 1, 32, "Output"]
+Cell[14049, 399, 1076, 27, 96, "Input"],
+Cell[15128, 428, 84, 1, 32, "Output"],
+Cell[15215, 431, 75, 1, 32, "Output"],
+Cell[15293, 434, 79, 1, 32, "Output"]
 }, Open  ]]
 }
 ]
